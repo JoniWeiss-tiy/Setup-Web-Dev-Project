@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sass, Mocha, Webpack, WebDevServer</title>
+  </head>
+  <body>
+
+    <h1>Set up Development Environment</h1>
+    <h2>Webpack:</h2>
+    <ol>
+      <li>Create directory structure</li>
+      <ul>
+        <li><code>project directory</code></li>
+        <li><code>--public</code></li>
+        <li><code>----bundle.js</code></li>
+        <li><code>--src</code></li>
+        <li><code>----scripts</code></li>
+        <li><code>------entry.js</code></li>
+        <li><code>----styles</code></li>
+        <li><code>------main.sass</code></li>
+      </ul>
+      <li><code>$ npm init</code></li>
+      <li><code>$ npm install webpack --save-dev</code></li>
+      <li>Create webpack.config.js file and populate it.</li>
+      <li>Add entry.js file and add requires to it.</li>
+      <li>Install style, sass, and css loaders: <code>$ npm install css-loader style-loader npm-sass sass-loader --save-dev</code></li>
+      <li>Run webpack: <code>$ webpack --watch</code></li>
+      <li>Install webpack web server: <code>$ npm install webpack-dev-server --save-dev</code></li>
+      <li>Open a new terminal window and run the webpack server: <code>$ node_modules/.bin/webpack-dev-server</code></li>
+      <li>NOTE: Both terminals windows need to be open and running webpack --watch and webpack-dev-server.</li>
+      <li>Navigate to <a href="localhost:8080/webpack-dev-server/" target="_blank">localhost:8080/webpack-dev-server/</a></li>
+    </ol>
+    <h2>Mocha:</h2>
+    <ol>
+      <li>Install mocha: <code>$ npm install mocha --save-dev</code></li>
+      <li>Create tests directory (under src), and tests.js file for the tests.</li>
+      <li>Add tests to the tests.js file.</li>
+      <li>Run tests like this: <code>$ mocha ./src/tests</code></li>
+      <li>Edit webpack.config.js file to add the command line for mocha tests under the scripts entry.</li>
+      <li></li>
+    </ol>
+
+  <script src="./public/bundle.js"></script>
+  </body>
+</html>
